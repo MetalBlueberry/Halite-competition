@@ -2,7 +2,8 @@
 
 ## Simulation
 
-- Find if can be run inside docker.
+- Find if can be run inside docker. (YES)
+    - Write requirements for sending bots
 - Run simulations on demand in the cloud.
 - Prepare a visualization tool for the results.
 
