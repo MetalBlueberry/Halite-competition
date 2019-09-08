@@ -34,8 +34,7 @@ Instructions [here](https://docs.docker.com/docker-for-windows/install/)
 
 > Docker for windows is problematic, I recommend to use a linux host whenever is possible.
 
-
-## Local develpment
+## Local development
 
 Basic usage requires only the path to the bot executable that you want to run. The following commands executes two instances of the same bot.
 
@@ -100,7 +99,6 @@ aws s3 cp hbot.tar.gz s3://halite2/bots/
 ```
 
 ### Database
-
 
 You will be able to run queries against the database using the web [editor](https://console.aws.amazon.com/rds/home?region=us-east-1#query-editor:) or the [awscli]
 
