@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="reveal/css/reset.css">
+	<link rel="stylesheet" href="reveal/css/reveal.css">
+	<link rel="stylesheet" href="reveal/css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="reveal/lib/css/monokai.css">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Halite Introduction</h1>
+				<aside class="notes">
+					- I discovered this game 2 years ago
+					- I've tried to participate using Python, but Struggled
+					- Pro gamers are at a totally different level
+				</aside>
+			</section>
+			<section>
+				<section>
+					<h1>What Is Halite?</h1>
+					<aside class="notes">
+						Reminds me to old mini-games in flash
+					</aside>
+				</section>
+				<section>
+					<img src="images/gifs/PaleConcreteBuck-size_restricted.gif">
+				</section>
+				<section>
+					<img src="images/gifs/Oct-16-2017 15-23-13 intro.gif">
+					<aside class="notes">
+						The main difference is that you have to code the control of the ships
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Game Rules</h1>
+				</section>
+				<section>
+					<img src="images/tutorial-images/map.png">
+				</section>
+				<section>
+					<img src="https://storage.cloud.google.com/halite-content/ship-movement.gif">
+					<img src="https://storage.cloud.google.com/halite-content/ship-combat.gif">
+					<img src="https://storage.cloud.google.com/halite-content/planet-production.gif">
+				</section>
+			</section>
+			<section>
+				<h1>Hello World</h1>
+			</section>
+			<section>
+				<h1>Docker deployment</h1>
+			</section>
+		</div>
+	</div>
+
+	<script src="reveal/js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			hash: true,
+			dependencies: [
+				{src: 'reveal/plugin/markdown/marked.js'},
+				{src: 'reveal/plugin/markdown/markdown.js'},
+				{src: 'reveal/plugin/notes/notes.js', async: true},
+				{src: 'reveal/plugin/highlight/highlight.js', async: true}
+			],
+			// Parallax background image
+			parallaxBackgroundImage: 'images/tutorial-images/ships-in-combat.jpeg',
+
+			// Parallax background size
+			parallaxBackgroundSize: '2400px 1350px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+
+			// Number of pixels to move the parallax background per slide
+			// - Calculated automatically unless specified
+			// - Set to 0 to disable movement along an axis
+			parallaxBackgroundHorizontal: 100,
+			parallaxBackgroundVertical: 100
+		});
+	</script>
+</body>
+
+</html>
