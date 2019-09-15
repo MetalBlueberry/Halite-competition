@@ -255,9 +255,60 @@
                     <h1><a href="https://2017.halite.io/play-programming-challenge">Game Visualizer</a></h1>
                 </section>
             </section>
-
             <section>
-                <h1>Docker deployment</h1>
+                <section>
+                    <h1>Docker Image</h1>
+                    <pre>
+                        <code data-trim data-noescape>
+FROM python:3-alpine
+
+COPY . .
+
+CMD ["python","MyBot.py"]
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h1>Docker workflow</h1>
+                    <pre>
+                        <code data-trim data-noescape>
+BOT=hbot
+
+# Build 
+docker build -t $BOT:latest .
+
+# Play
+halite (...) "docker run --rm -i $BOT:latest"
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h1>Docker Export/Import</h1>
+                    <pre>
+                        <code data-trim data-noescape>
+docker save $BOT | gzip > $BOT.tar.gz
+cat $BOT.tar.gz | gunzip | docker load
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h1>Submit Bot</h1>
+                    <pre>
+                        <code data-trim data-noescape>
+aws s3 cp hbot.tar.gz s3://halite2/bots/
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h1>Future sessions</h1>
+                        <div class="col1" data-markdown>
+- 2nd October - First Checkpoint
+- 15th October - Round 1
+- 13th November - Round 2
+- 11th December - Round 3
+
+                        </div>
+                </section>
             </section>
         </div>
     </div>
@@ -285,7 +336,7 @@
             // Number of pixels to move the parallax background per slide
             // - Calculated automatically unless specified
             // - Set to 0 to disable movement along an axis
-            parallaxBackgroundHorizontal: 100,
+            parallaxBackgroundHorizontal: 70,
             parallaxBackgroundVertical: 70
         });
     </script>

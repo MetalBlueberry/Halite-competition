@@ -81,8 +81,8 @@ docker build -t hbot:latest .
 Now you can save/load the image as a .tar file with the save/load command
 
 ```sh
-docker save hbot | gzip > hbot.tar
-cat hbot.tar.gz | gunzip | docker load
+docker save $BOT | gzip > $BOT.tar.gz
+cat $BOT.tar.gz | gunzip | docker load
 ```
 
 > **it is important to keep the name of the tar the same as the name of the image. This is how the game manager will identify images.**
