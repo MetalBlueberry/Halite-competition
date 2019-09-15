@@ -5,3 +5,7 @@ video/1565005848744/*
 video/AI Challenge*.mp4
 video/video_backup*.kdenlive
 video/videos/*
+replay-*
+__pycache__
+docs/Python3/halite
+docs/Python3/*.log
