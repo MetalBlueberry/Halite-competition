@@ -1,20 +1,36 @@
-# Instructions
+# user guide
+
+This document is the user guide for the erni halite2 competition.
+
+If you want to start playing, just choose your development platform and programming language, and then download the appropiate package (see section _get the binaries_ just below). Then see section _local development_ further below.
+
+Even if you attended the presentation session, it is recommended that you read [the halite 2 documentation](https://2017.halite.io/learn-programming-challenge/). In [the community presentation](https://metalblueberry.github.io/Halite-competition/#/) there is also a good collection of relevant information and may be useful as a cheatsheet.
+
 
 ## Installation
 
-### Download or compile game binaries
+In this section there are instructions to install the required tools. It is not required to install everything at once.
 
-You can download the game binary already compiled for your platform and the basic bot configuration for all the available languages in this [link](https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits/)
+### get the binaries
+
+You can download the game halite2 binary already compiled for your platform (linux/mac/windows) and the basic bot configuration for all the available languages in this [link](https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits/).
+
+You can also compile the binaries if you like (cmake 3.8 is required). No ARM binaries have been found to be available so far. Let us know if you decide to build them for i.e. the raspberry pi.
 
 ### Offline visualizer
 
-The official visualizer is also available in the previous page, but you need to build it on your own and can be a little tricky. I've discover another visualizer called [chlorine](https://github.com/fohristiwhirl/chlorine) that allows you to see the game in a minimalists way but with much more useful information.
+The official visualizer is also available in the previous page, but you need to build it on your own and that can be a little tricky. I've discover another visualizer called [chlorine](https://github.com/fohristiwhirl/chlorine) that allows you to see the game in a minimalists way but with much more useful information.
 
-### Install docker
+### docker
+
+Docker is used to build a container that you have to send to the group storage, which will be used to play games against other participants. You don't need to install it to start hacking.
+
+Below you can find how to build and send these containers.
+
 
 #### Linux
 
-Most distributions already have docker in the package manager, so provably you can install docker with something like this command:
+Most distributions already have docker in the package manager, so probably you can install docker with something like this command:
 
 ```sh
 sudo apt-get install docker-ce docker-ce-cli containerd.io
