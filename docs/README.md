@@ -1,23 +1,28 @@
 # user guide
 
-This document is the user guide for the erni halite2 competition.
+This document is the user guide for the Erni halite2 competition.
 
-If you want to start playing, just choose your development platform and programming language, and then download the appropiate package (see section _get the binaries_ just below). Then see section _local development_ further below.
+If you want to start playing right away, just do as follows:
+
+* choose your development platform and programming language
+* download the appropiate package (see section _get the package_ just below)
+* follow section _local development_ further below
 
 Even if you attended the presentation session, it is recommended that you read [the halite 2 documentation](https://2017.halite.io/learn-programming-challenge/). In [the community presentation](https://metalblueberry.github.io/Halite-competition/#/) there is also a good collection of relevant information and may be useful as a cheatsheet.
 
 
 ## Installation
 
-In this section there are instructions to install the required tools. It is not required to install everything at once.
+In this section there are instructions to install the development required tools. It is not required to install everything at once.
 
-### get the binaries
+### get the package
 
-You can download the game halite2 binary already compiled for your platform (linux/mac/windows) and the basic bot configuration for all the available languages in this [link](https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits/).
+Download [your preferred game halite2 package](https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits/) for your platform (linux/mac/windows) and your programming language of choice.
 
-You can also compile the binaries if you like (cmake 3.8 is required). No ARM binaries have been found to be available so far. Let us know if you decide to build them for i.e. the raspberry pi.
+These packages contain a compiled binary, the halite development library, the basic bot configuration and scripts to run games. It is recommended to create a new folder and unzip the downloaded package there.
 
-### Offline visualizer
+
+### offline visualizer
 
 The official visualizer is also available in the previous page, but you need to build it on your own and that can be a little tricky. I've discover another visualizer called [chlorine](https://github.com/fohristiwhirl/chlorine) that allows you to see the game in a minimalists way but with much more useful information.
 
@@ -28,7 +33,7 @@ Docker is used to build a container that you have to send to the group storage, 
 Below you can find how to build and send these containers.
 
 
-#### Linux
+#### docker for linux
 
 Most distributions already have docker in the package manager, so probably you can install docker with something like this command:
 
@@ -44,7 +49,7 @@ Also is recommended to add your user to the docker group. Just to avoid typing s
   sudo usermod -aG docker your-user
 ```
 
-#### Windows
+#### docker for windows
 
 Instructions [here](https://docs.docker.com/docker-for-windows/install/)
 
