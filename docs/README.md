@@ -1,20 +1,41 @@
-# Instructions
+# user guide
+
+This document is the user guide for the Erni halite2 competition.
+
+If you want to start playing right away, just do as follows:
+
+* choose your development platform and programming language
+* download the appropiate package (see section _get the package_ just below)
+* follow section _local development_ further below
+
+Even if you attended the presentation session, it is recommended that you read [the halite 2 documentation](https://2017.halite.io/learn-programming-challenge/). In [the community presentation](https://metalblueberry.github.io/Halite-competition/#/) there is also a good collection of relevant information and may be useful as a cheatsheet.
+
 
 ## Installation
 
-### Download or compile game binaries
+In this section there are instructions to install the development required tools. It is not required to install everything at once.
 
-You can download the game binary already compiled for your platform and the basic bot configuration for all the available languages in this [link](https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits/)
+### get the package
 
-### Offline visualizer
+Download [your preferred game halite2 package](https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits/) for your platform (linux/mac/windows) and your programming language of choice.
 
-The official visualizer is also available in the previous page, but you need to build it on your own and can be a little tricky. I've discover another visualizer called [chlorine](https://github.com/fohristiwhirl/chlorine) that allows you to see the game in a minimalists way but with much more useful information.
+These packages contain a compiled binary, the halite development library, the basic bot configuration and scripts to run games. It is recommended to create a new folder and unzip the downloaded package there.
 
-### Install docker
 
-#### Linux
+### offline visualizer
 
-Most distributions already have docker in the package manager, so provably you can install docker with something like this command:
+The official visualizer is also available in the previous page, but you need to build it on your own and that can be a little tricky. I have discovered another visualizer called [chlorine](https://github.com/fohristiwhirl/chlorine) that allows you to see the game in a minimalist way but with much more useful information.
+
+### docker
+
+Docker is used to build a container that you have to send to the group storage, which will be used to play games against other participants. You don't need to install it to start hacking.
+
+Below you can find how to build and send these containers.
+
+
+#### docker for linux
+
+Most distributions already have docker in the package manager, so probably you can install docker with something like this command:
 
 ```sh
 sudo apt-get install docker-ce docker-ce-cli containerd.io
@@ -28,7 +49,7 @@ Also is recommended to add your user to the docker group. Just to avoid typing s
   sudo usermod -aG docker your-user
 ```
 
-#### Windows
+#### docker for windows
 
 Instructions [here](https://docs.docker.com/docker-for-windows/install/)
 
