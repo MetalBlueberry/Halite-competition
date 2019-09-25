@@ -24,7 +24,7 @@ These packages contain a compiled binary, the halite development library, the ba
 
 ### offline visualizer
 
-The official visualizer is also available in the previous page, but you need to build it on your own and that can be a little tricky. I've discover another visualizer called [chlorine](https://github.com/fohristiwhirl/chlorine) that allows you to see the game in a minimalists way but with much more useful information.
+The official visualizer is also available in the previous page, but you need to build it on your own and that can be a little tricky. I have discovered another visualizer called [chlorine](https://github.com/fohristiwhirl/chlorine) that allows you to see the game in a minimalist way but with much more useful information.
 
 ### docker
 
